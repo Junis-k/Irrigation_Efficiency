@@ -24,19 +24,18 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/bulma/css/versions/bulma-no-dark-mode.min.css">
   <link rel="stylesheet" href="./assets/bulma/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./assets/bulma/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./assets/bulma/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./assets/Style.css">
-  <link rel="icon" href="./static/images/favicon.svg"> <!-- icône de la page -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/bulma/css/versions/bulma-no-dark-mode.css">
+  <link rel="icon" href="./assets/images/favicon.svg"> <!-- icône de la page -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script defer src="./assets/js/fontawesome.all.min.js"></script>
   <script src="./assets/bulma/js/bulma-carousel.min.js"></script>
   <script src="./assets/bulma/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="./assets/js/index.js"></script>
 </head>
 <body>
 
@@ -129,8 +128,21 @@
             presented with focus on the solutions from Côte d’Ivoire.
           </p>
         </div>
-        <div class="content has-text-justified">
-          <iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FfREaFziHgBH5ncCqL&css" width="800" height="400"></iframe>
+        <style>
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ajustez la hauteur selon vos besoins */
+        }
+        iframe {
+            width: 80%; /* Ajustez la largeur selon vos besoins */
+            height: 80%; /* Ajustez la hauteur selon vos besoins */
+        }
+        </style>
+          
+        <div class="iframe-container">
+          <iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FvKmzCiSuB7rYmMwCZ&noBootstrap=1"></iframe>
         </div>
       </div>
     </div>
@@ -146,7 +158,7 @@
 
 <div class="latex">  
     </div>
-          <center><img src="model-Page.png" alt="Alternative Text" width="80%" class="center"></center>
+          <center><img src="model-Page.png" alt="Alternative Text" width="90%" class="center"></center>
         </div>
       </div>
     </div>
@@ -160,14 +172,16 @@
           <div class="column">
             <div class="content">
               <h2 class="title is-3">Dataset search</h2>
-              
+
+              <div class="content has-text-justified">
               <p>
                 Irrigation efficiency is essential for irrigated rice growing, as it maximizes the productivity of the water used, which is crucial in a context of limited water resources. Current irrigation methods can be inefficient, particularly in terms of water transport and application. These inefficiencies can lead to significant water losses and sub-optimal use of resources. 
                 To overcome these limitations, it is proposed to adopt advanced technologies and improved management practices. For example, the use of variable-volume irrigation systems and sensors for precise irrigation control can improve overall efficiency. Studies have shown that overall irrigation efficiency can be improved by optimizing water transport (ET) and application efficiency (EA). 
                 These data are essential for developing more efficient irrigation strategies. State-of-the-art irrigation methods have been tested to assess their effectiveness. For example, the use of drones to monitor fields and adjust irrigation in real time may offer viable solutions for improving irrigation efficiency.This review would summarize the latest technological advances and research in this field :
               </p>
-              <center><img src="Dataset_search.png" alt="Dataset search illustration" width="80%" class="center"></center>
+              <center><img src="Dataset_search.png" alt="Dataset search illustration" width="90%" class="center"></center>
               <div class="content has-text-justified">
+                
                 <p>
                   To distinguish relevant papers on the topic, electronic scientific databases such as ArXiv and Scopus and indexing services such as Google Scholar and ResearchGate were searched on June 13, 2024 for papers on irrigation efficiency and artificial intelligence. Preference was given to articles produced in the last five (5) years on the subject. This represents a total of 1,607 scientific articles per continent.
                   These articles were identified on the basis of combined keywords such as: {Artificial intelligence} + {Agriculture} or {Artificial intelligence} + {Precision agriculture}; {Irrigation efficiency} + {Optimization} or {Irrigation efficiency} + {Water management}.
@@ -199,7 +213,7 @@
     </code></pre>
 
     <pre><code>@article{nguessan_using_2023,
-      author    = {Szil{\'{a}}rd Moln{\'{a}}r and Levente Tam{\'{a}}s},
+      author    = {N'guessan Jean-Yves K., Adahi Botou M., Konan-Waidhet Arthur B., Kra Junias L., Koffi Bérenger, Habel Michal, Brou Dibi, Hironobu Siguyama and Assidjo, Emmanuel N.},
       title     = {Using the SWAT+ model to assess the conditions of water inflow to a reservoir in an uncontrolled agricultural catchment case Study of the Nanan Reservoir in the Lake Taabo catchment (Côte d'Ivoire)},
       journal   = {Ecohydrology & Hydrobiologyn},
       volume    = {},
